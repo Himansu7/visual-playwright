@@ -1,0 +1,288 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\Jhaman  das sindhi\\Desktop\\playwright_Automation\\playwright-visual\\visual-playwright\\visual.config.ts",
+    "rootDir": "C:/Users/Jhaman  das sindhi/Desktop/playwright_Automation/playwright-visual/visual-playwright/tests/visual",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1,
+      "totalTime": 111361.09999999404
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-result.json",
+          "outputFolder": "Test-Report"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "results.xml",
+          "outputFolder": "Test-Report"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never",
+          "outputFolder": "Test-Report"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/Jhaman  das sindhi/Desktop/playwright_Automation/playwright-visual/visual-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "Chromium",
+        "name": "Chromium",
+        "testDir": "C:/Users/Jhaman  das sindhi/Desktop/playwright_Automation/playwright-visual/visual-playwright/tests/visual",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/Jhaman  das sindhi/Desktop/playwright_Automation/playwright-visual/visual-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "Firefox",
+        "name": "Firefox",
+        "testDir": "C:/Users/Jhaman  das sindhi/Desktop/playwright_Automation/playwright-visual/visual-playwright/tests/visual",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/Jhaman  das sindhi/Desktop/playwright_Automation/playwright-visual/visual-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "Webkit",
+        "name": "Webkit",
+        "testDir": "C:/Users/Jhaman  das sindhi/Desktop/playwright_Automation/playwright-visual/visual-playwright/tests/visual",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.36.1",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "visual.spec.ts",
+      "file": "visual.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Visual Regression Testing Demo",
+          "file": "visual.spec.ts",
+          "line": 3,
+          "column": 15,
+          "specs": [
+            {
+              "title": "TC001 - verify home page canvas, verify hamburger menu content, Verify Play screen canvas - PASS",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Chromium",
+                  "projectName": "Chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 37416,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-07-18T16:11:50.106Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-d01839f00847d9dac44f",
+              "file": "visual.spec.ts",
+              "line": 5,
+              "column": 6
+            },
+            {
+              "title": "TC002 - verify home page canvas, es canvas against en",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Chromium",
+                  "projectName": "Chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "failed",
+                      "duration": 35545,
+                      "error": {
+                        "message": "\u001b[31mScreenshot comparison failed:\u001b[39m\n\n  6972 pixels (ratio 0.01 of all image pixels) are different.\n\nExpected: \u001b[33mC:\\Users\\Jhaman  das sindhi\\Desktop\\playwright_Automation\\playwright-visual\\visual-playwright\\test-results\\visual-Visual-Regression-Testing-Demo-TC002---verify-home-page-canvas-es-canvas-against-en-Chromium\\1Canvas-game-page-canvas-expected.png\u001b[39m\nReceived: \u001b[33mC:\\Users\\Jhaman  das sindhi\\Desktop\\playwright_Automation\\playwright-visual\\visual-playwright\\test-results\\visual-Visual-Regression-Testing-Demo-TC002---verify-home-page-canvas-es-canvas-against-en-Chromium\\1Canvas-game-page-canvas-actual.png\u001b[39m\n    Diff: \u001b[33mC:\\Users\\Jhaman  das sindhi\\Desktop\\playwright_Automation\\playwright-visual\\visual-playwright\\test-results\\visual-Visual-Regression-Testing-Demo-TC002---verify-home-page-canvas-es-canvas-against-en-Chromium\\1Canvas-game-page-canvas-diff.png\u001b[39m",
+                        "stack": "Error: \u001b[31mScreenshot comparison failed:\u001b[39m\n\n  6972 pixels (ratio 0.01 of all image pixels) are different.\n\nExpected: \u001b[33mC:\\Users\\Jhaman  das sindhi\\Desktop\\playwright_Automation\\playwright-visual\\visual-playwright\\test-results\\visual-Visual-Regression-Testing-Demo-TC002---verify-home-page-canvas-es-canvas-against-en-Chromium\\1Canvas-game-page-canvas-expected.png\u001b[39m\nReceived: \u001b[33mC:\\Users\\Jhaman  das sindhi\\Desktop\\playwright_Automation\\playwright-visual\\visual-playwright\\test-results\\visual-Visual-Regression-Testing-Demo-TC002---verify-home-page-canvas-es-canvas-against-en-Chromium\\1Canvas-game-page-canvas-actual.png\u001b[39m\n    Diff: \u001b[33mC:\\Users\\Jhaman  das sindhi\\Desktop\\playwright_Automation\\playwright-visual\\visual-playwright\\test-results\\visual-Visual-Regression-Testing-Demo-TC002---verify-home-page-canvas-es-canvas-against-en-Chromium\\1Canvas-game-page-canvas-diff.png\u001b[39m\n    at C:\\Users\\Jhaman  das sindhi\\Desktop\\playwright_Automation\\playwright-visual\\visual-playwright\\tests\\visual\\visual.spec.ts:66:45",
+                        "location": {
+                          "file": "C:\\Users\\Jhaman  das sindhi\\Desktop\\playwright_Automation\\playwright-visual\\visual-playwright\\tests\\visual\\visual.spec.ts",
+                          "column": 45,
+                          "line": 66
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 64 |\u001b[39m     \u001b[0m\n\u001b[0m \u001b[90m 65 |\u001b[39m     \u001b[90m//expect(await pageElement!.screenshot()).toMatchSnapshot('1Canvas-game-page-canvas.png',{maxDiffPixelRatio:0.01})\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 66 |\u001b[39m     expect(\u001b[36mawait\u001b[39m pageElement\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mscreenshot())\u001b[33m.\u001b[39mtoMatchSnapshot(\u001b[32m'1Canvas-game-page-canvas.png'\u001b[39m\u001b[33m,\u001b[39m{maxDiffPixels\u001b[33m:\u001b[39m\u001b[35m4500\u001b[39m})\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 67 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 68 |\u001b[39m     \u001b[0m\n\u001b[0m \u001b[90m 69 |\u001b[39m   })\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Jhaman  das sindhi\\Desktop\\playwright_Automation\\playwright-visual\\visual-playwright\\tests\\visual\\visual.spec.ts",
+                            "column": 45,
+                            "line": 66
+                          },
+                          "message": "Error: \u001b[31mScreenshot comparison failed:\u001b[39m\n\n  6972 pixels (ratio 0.01 of all image pixels) are different.\n\nExpected: \u001b[33mC:\\Users\\Jhaman  das sindhi\\Desktop\\playwright_Automation\\playwright-visual\\visual-playwright\\test-results\\visual-Visual-Regression-Testing-Demo-TC002---verify-home-page-canvas-es-canvas-against-en-Chromium\\1Canvas-game-page-canvas-expected.png\u001b[39m\nReceived: \u001b[33mC:\\Users\\Jhaman  das sindhi\\Desktop\\playwright_Automation\\playwright-visual\\visual-playwright\\test-results\\visual-Visual-Regression-Testing-Demo-TC002---verify-home-page-canvas-es-canvas-against-en-Chromium\\1Canvas-game-page-canvas-actual.png\u001b[39m\n    Diff: \u001b[33mC:\\Users\\Jhaman  das sindhi\\Desktop\\playwright_Automation\\playwright-visual\\visual-playwright\\test-results\\visual-Visual-Regression-Testing-Demo-TC002---verify-home-page-canvas-es-canvas-against-en-Chromium\\1Canvas-game-page-canvas-diff.png\u001b[39m\n\n\u001b[0m \u001b[90m 64 |\u001b[39m     \u001b[0m\n\u001b[0m \u001b[90m 65 |\u001b[39m     \u001b[90m//expect(await pageElement!.screenshot()).toMatchSnapshot('1Canvas-game-page-canvas.png',{maxDiffPixelRatio:0.01})\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 66 |\u001b[39m     expect(\u001b[36mawait\u001b[39m pageElement\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mscreenshot())\u001b[33m.\u001b[39mtoMatchSnapshot(\u001b[32m'1Canvas-game-page-canvas.png'\u001b[39m\u001b[33m,\u001b[39m{maxDiffPixels\u001b[33m:\u001b[39m\u001b[35m4500\u001b[39m})\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 67 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 68 |\u001b[39m     \u001b[0m\n\u001b[0m \u001b[90m 69 |\u001b[39m   })\u001b[0m\n\n\u001b[2m    at C:\\Users\\Jhaman  das sindhi\\Desktop\\playwright_Automation\\playwright-visual\\visual-playwright\\tests\\visual\\visual.spec.ts:66:45\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-07-18T16:12:28.296Z",
+                      "attachments": [
+                        {
+                          "name": "1Canvas-game-page-canvas-expected.png",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Jhaman  das sindhi\\Desktop\\playwright_Automation\\playwright-visual\\visual-playwright\\test-results\\visual-Visual-Regression-Testing-Demo-TC002---verify-home-page-canvas-es-canvas-against-en-Chromium\\1Canvas-game-page-canvas-expected.png"
+                        },
+                        {
+                          "name": "1Canvas-game-page-canvas-actual.png",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Jhaman  das sindhi\\Desktop\\playwright_Automation\\playwright-visual\\visual-playwright\\test-results\\visual-Visual-Regression-Testing-Demo-TC002---verify-home-page-canvas-es-canvas-against-en-Chromium\\1Canvas-game-page-canvas-actual.png"
+                        },
+                        {
+                          "name": "1Canvas-game-page-canvas-diff.png",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Jhaman  das sindhi\\Desktop\\playwright_Automation\\playwright-visual\\visual-playwright\\test-results\\visual-Visual-Regression-Testing-Demo-TC002---verify-home-page-canvas-es-canvas-against-en-Chromium\\1Canvas-game-page-canvas-diff.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Jhaman  das sindhi\\Desktop\\playwright_Automation\\playwright-visual\\visual-playwright\\test-results\\visual-Visual-Regression-Testing-Demo-TC002---verify-home-page-canvas-es-canvas-against-en-Chromium\\test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Jhaman  das sindhi\\Desktop\\playwright_Automation\\playwright-visual\\visual-playwright\\tests\\visual\\visual.spec.ts",
+                        "column": 45,
+                        "line": 66
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-2d8ad859f171418f9551",
+              "file": "visual.spec.ts",
+              "line": 52,
+              "column": 8
+            },
+            {
+              "title": "TC003 - verify hamburger menu content - es data against en",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Chromium",
+                  "projectName": "Chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "failed",
+                      "duration": 34278,
+                      "error": {
+                        "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"GAME RULES\"\u001b[39m\nReceived: \u001b[31m\"REGLAS DEL JUEGO\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"GAME RULES\"\u001b[39m\nReceived: \u001b[31m\"REGLAS DEL JUEGO\"\u001b[39m\n    at C:\\Users\\Jhaman  das sindhi\\Desktop\\playwright_Automation\\playwright-visual\\visual-playwright\\tests\\visual\\visual.spec.ts:98:20",
+                        "location": {
+                          "file": "C:\\Users\\Jhaman  das sindhi\\Desktop\\playwright_Automation\\playwright-visual\\visual-playwright\\tests\\visual\\visual.spec.ts",
+                          "column": 20,
+                          "line": 98
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  96 |\u001b[39m   \u001b[0m\n\u001b[0m \u001b[90m  97 |\u001b[39m     expect(text1\u001b[33m!\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[32m\"Book of Amduat™\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  98 |\u001b[39m     expect(text2\u001b[33m!\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[32m\"GAME RULES\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  99 |\u001b[39m   \u001b[0m\n\u001b[0m \u001b[90m 100 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#panel #close_button'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 101 |\u001b[39m   \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Jhaman  das sindhi\\Desktop\\playwright_Automation\\playwright-visual\\visual-playwright\\tests\\visual\\visual.spec.ts",
+                            "column": 20,
+                            "line": 98
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"GAME RULES\"\u001b[39m\nReceived: \u001b[31m\"REGLAS DEL JUEGO\"\u001b[39m\n\n\u001b[0m \u001b[90m  96 |\u001b[39m   \u001b[0m\n\u001b[0m \u001b[90m  97 |\u001b[39m     expect(text1\u001b[33m!\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[32m\"Book of Amduat™\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  98 |\u001b[39m     expect(text2\u001b[33m!\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[32m\"GAME RULES\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  99 |\u001b[39m   \u001b[0m\n\u001b[0m \u001b[90m 100 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#panel #close_button'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 101 |\u001b[39m   \u001b[0m\n\n\u001b[2m    at C:\\Users\\Jhaman  das sindhi\\Desktop\\playwright_Automation\\playwright-visual\\visual-playwright\\tests\\visual\\visual.spec.ts:98:20\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-07-18T16:13:05.201Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Jhaman  das sindhi\\Desktop\\playwright_Automation\\playwright-visual\\visual-playwright\\test-results\\visual-Visual-Regression-Testing-Demo-TC003---verify-hamburger-menu-content---es-data-against-en-Chromium\\test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Jhaman  das sindhi\\Desktop\\playwright_Automation\\playwright-visual\\visual-playwright\\tests\\visual\\visual.spec.ts",
+                        "column": 20,
+                        "line": 98
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-443e019806391659bccf",
+              "file": "visual.spec.ts",
+              "line": 72,
+              "column": 8
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

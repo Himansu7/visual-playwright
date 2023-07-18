@@ -1,0 +1,87 @@
+<testsuites id="" name="" tests="3" failures="2" skipped="0" errors="0" time="111.38773600000142">
+<testsuite name="visual.spec.ts" timestamp="2023-07-18T16:11:49.564Z" hostname="Chromium" tests="3" failures="2" skipped="0" time="107.239" errors="0">
+<testcase name="Visual Regression Testing Demo › TC001 - verify home page canvas, verify hamburger menu content, Verify Play screen canvas - PASS" classname="visual.spec.ts" time="37.416">
+</testcase>
+<testcase name="Visual Regression Testing Demo › TC002 - verify home page canvas, es canvas against en" classname="visual.spec.ts" time="35.545">
+<failure message="visual.spec.ts:52:8 TC002 - verify home page canvas, es canvas against en" type="FAILURE">
+<![CDATA[  [Chromium] › visual.spec.ts:52:8 › Visual Regression Testing Demo › TC002 - verify home page canvas, es canvas against en 
+
+    Error: Screenshot comparison failed:
+
+      6972 pixels (ratio 0.01 of all image pixels) are different.
+
+    Expected: C:\Users\Jhaman  das sindhi\Desktop\playwright_Automation\playwright-visual\visual-playwright\test-results\visual-Visual-Regression-Testing-Demo-TC002---verify-home-page-canvas-es-canvas-against-en-Chromium\1Canvas-game-page-canvas-expected.png
+    Received: C:\Users\Jhaman  das sindhi\Desktop\playwright_Automation\playwright-visual\visual-playwright\test-results\visual-Visual-Regression-Testing-Demo-TC002---verify-home-page-canvas-es-canvas-against-en-Chromium\1Canvas-game-page-canvas-actual.png
+        Diff: C:\Users\Jhaman  das sindhi\Desktop\playwright_Automation\playwright-visual\visual-playwright\test-results\visual-Visual-Regression-Testing-Demo-TC002---verify-home-page-canvas-es-canvas-against-en-Chromium\1Canvas-game-page-canvas-diff.png
+
+      64 |     
+      65 |     //expect(await pageElement!.screenshot()).toMatchSnapshot('1Canvas-game-page-canvas.png',{maxDiffPixelRatio:0.01})
+    > 66 |     expect(await pageElement!.screenshot()).toMatchSnapshot('1Canvas-game-page-canvas.png',{maxDiffPixels:4500});
+         |                                             ^
+      67 |
+      68 |     
+      69 |   })
+
+        at C:\Users\Jhaman  das sindhi\Desktop\playwright_Automation\playwright-visual\visual-playwright\tests\visual\visual.spec.ts:66:45
+
+    attachment #1: 1Canvas-game-page-canvas-expected.png (image/png) ───────────────────────────────
+    test-results\visual-Visual-Regression-Testing-Demo-TC002---verify-home-page-canvas-es-canvas-against-en-Chromium\1Canvas-game-page-canvas-expected.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: 1Canvas-game-page-canvas-actual.png (image/png) ─────────────────────────────────
+    test-results\visual-Visual-Regression-Testing-Demo-TC002---verify-home-page-canvas-es-canvas-against-en-Chromium\1Canvas-game-page-canvas-actual.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: 1Canvas-game-page-canvas-diff.png (image/png) ───────────────────────────────────
+    test-results\visual-Visual-Regression-Testing-Demo-TC002---verify-home-page-canvas-es-canvas-against-en-Chromium\1Canvas-game-page-canvas-diff.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\visual-Visual-Regression-Testing-Demo-TC002---verify-home-page-canvas-es-canvas-against-en-Chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\test-results\visual-Visual-Regression-Testing-Demo-TC002---verify-home-page-canvas-es-canvas-against-en-Chromium\1Canvas-game-page-canvas-expected.png]]
+
+[[ATTACHMENT|..\..\test-results\visual-Visual-Regression-Testing-Demo-TC002---verify-home-page-canvas-es-canvas-against-en-Chromium\1Canvas-game-page-canvas-actual.png]]
+
+[[ATTACHMENT|..\..\test-results\visual-Visual-Regression-Testing-Demo-TC002---verify-home-page-canvas-es-canvas-against-en-Chromium\1Canvas-game-page-canvas-diff.png]]
+
+[[ATTACHMENT|..\..\test-results\visual-Visual-Regression-Testing-Demo-TC002---verify-home-page-canvas-es-canvas-against-en-Chromium\test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Visual Regression Testing Demo › TC003 - verify hamburger menu content - es data against en" classname="visual.spec.ts" time="34.278">
+<failure message="visual.spec.ts:72:8 TC003 - verify hamburger menu content - es data against en" type="FAILURE">
+<![CDATA[  [Chromium] › visual.spec.ts:72:8 › Visual Regression Testing Demo › TC003 - verify hamburger menu content - es data against en 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "GAME RULES"
+    Received: "REGLAS DEL JUEGO"
+
+       96 |   
+       97 |     expect(text1!).toBe("Book of Amduat™");
+    >  98 |     expect(text2!).toBe("GAME RULES");
+          |                    ^
+       99 |   
+      100 |     await page.locator('#panel #close_button').click();
+      101 |   
+
+        at C:\Users\Jhaman  das sindhi\Desktop\playwright_Automation\playwright-visual\visual-playwright\tests\visual\visual.spec.ts:98:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\visual-Visual-Regression-Testing-Demo-TC003---verify-hamburger-menu-content---es-data-against-en-Chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\test-results\visual-Visual-Regression-Testing-Demo-TC003---verify-hamburger-menu-content---es-data-against-en-Chromium\test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
