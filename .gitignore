@@ -1,3 +1,5 @@
 node_modules
 Test-Report
 test-results
+test-result.json
+results.xml
